@@ -9,6 +9,9 @@
     "preview": "vite preview",
     "deploy": "npx gh-pages -d dist"
   },
+  "overrides": {
+    "glob": ">10.5.0"
+  },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
     "autoprefixer": "^10.4.16",
