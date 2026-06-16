@@ -7,9 +7,10 @@
 
 <main>
   <div class="max-w-xl space-y-4 bg-red-700 m-3 p-4 rounded-xl">
-  <img class="rounded-xl" on:click={forward} src={image?.src} alt={image?.alt}>
-  <div class="rounded h-10 bg-red-900 dark:text-white p-2 my-2 text-center">
-    {image?.alt}
+    <img class="rounded-xl" on:click={forward} on:keydown={(e) => e.key === 'Enter' && forward()} src={image?.src} alt={image?.alt} tabindex="0">
+    <div class="rounded h-10 bg-red-900 dark:text-white p-2 my-2 text-center">
+      {image?.alt}
+    </div>
   </div>
 </main>
 
